@@ -9,7 +9,7 @@ export default function BackBtn() {
 
   return (
     <ArrowLeftCircle
-      className="mr-12 cursor-pointer"
+      className="mr-12 cursor-pointer hover:text-red-600 duration-300"
       onClick={() => {
         router.back();
       }}

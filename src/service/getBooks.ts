@@ -43,35 +43,3 @@ export async function getBooks(
     throw error;
   }
 }
-
-// export async function getBestSellerBooks(): Promise<BookResponse[]> {
-//   try {
-//     const response = await axios.get(
-//       'https://openapi.naver.com/v1/search/book_adv.json',
-//       {
-//         params: {
-//           d_catg: '전체',
-//           d_titl: '',
-//           d_auth: '',
-//           d_cont: '',
-//           d_publ: '',
-//           d_isbn: '',
-//           d_snb: '',
-//           d_snda: '',
-//           d_syear: '',
-//           d_eyear: '',
-//           display: 10,
-//           sort: 'date',
-//         },
-//         headers: {
-//           'X-Naver-Client-Id': process.env.NEXT_API_CLIENT_ID,
-//           'X-Naver-Client-Secret': process.env.NEXT_API_CLIENT_SECRET,
-//         },
-//       }
-//     );
-//     return response.data.items as BookResponse[];
-//   } catch (error) {
-//     console.error('Failed to fetch data:', error);
-//     throw error;
-//   }
-// }
