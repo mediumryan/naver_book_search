@@ -1,9 +1,10 @@
 import React from 'react';
+// features
 import BackBtn from './backBtn';
 
 export default function Navbar() {
   return (
-    <div className="flex items-center text-sky-50 text-xl px-96 pt-12">
+    <div className="flex items-center text-sky-50 text-xl px-4 md:pl-[10%] md:pr-[10%] lg:pl-[25%] lg:pr-[25%] pt-12">
       <BackBtn />
     </div>
   );

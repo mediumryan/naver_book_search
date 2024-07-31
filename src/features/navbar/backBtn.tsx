@@ -1,8 +1,9 @@
 'use client';
 
-import { ArrowLeftCircle } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import React from 'react';
+// icons
+import { ArrowLeftCircle } from 'lucide-react';
 
 export default function BackBtn() {
   const router = useRouter();

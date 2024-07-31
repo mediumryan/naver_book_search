@@ -1,10 +1,12 @@
+import { useFormStatus } from 'react-dom';
+// components
 import {
   AlertDialog,
   AlertDialogContent,
   AlertDialogTitle,
 } from '@/components/ui/alert-dialog';
+// icons
 import { Loader } from 'lucide-react';
-import { useFormStatus } from 'react-dom';
 
 export default function Loading() {
   const { pending } = useFormStatus();

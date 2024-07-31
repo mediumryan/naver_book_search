@@ -1,5 +1,9 @@
 'use client';
 
+import Image from 'next/image';
+import Autoplay from 'embla-carousel-autoplay';
+import Link from 'next/link';
+// components
 import { Card, CardContent } from '@/components/ui/card';
 import {
   Carousel,
@@ -8,10 +12,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
+// service
 import { BookResponse } from '@/service/getBooks';
-import Image from 'next/image';
-import Autoplay from 'embla-carousel-autoplay';
-import Link from 'next/link';
 
 export function Example() {
   return (
