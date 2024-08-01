@@ -25,7 +25,7 @@ export default function SearchPage() {
   }, [state]);
 
   return (
-    <div className="px-8 md:pl-[10%] md:pr-[10%] lg:pl-[25%] lg:pr-[25%] py-12">
+    <div className="px-8 max-h-[85vh] md:pl-[10%] md:pr-[10%] lg:pl-[25%] lg:pr-[25%] py-12 overflow-y-auto">
       <form action={formAction}>
         <div className="flex items-center w-3/4 md:w-1/2 lg:w-1/2 my-0 mx-auto">
           <Input

@@ -8,8 +8,6 @@ export async function searchBookAction(
 ): Promise<any> {
   const query = formData.get('query') as string;
 
-  console.log(query);
-
   try {
     const bookData = await getBooks(query, 100);
 
