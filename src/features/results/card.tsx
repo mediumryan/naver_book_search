@@ -20,17 +20,21 @@ export default function BookResults({ bookData }: BookResultsProps) {
             className="rounded-md bg-slate-800 overflow-hidden"
           >
             <div id="card-image" className="w-[120px] h-[150px] relative">
-              <Image
-                src={book.image}
-                alt={book.title}
-                layout="fill"
-                objectFit="cover"
-                className="rounded-md"
-              />
+              <Link href={book.link}>
+                <Image
+                  src={book.image}
+                  alt={book.title}
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-md"
+                />
+              </Link>
             </div>
 
             <ScrollArea className="max-h-40 overflow-y-auto text-sky-50 my-4 p-4">
-              <h2 className="text-lg text-yellow-300">{book.title}</h2>
+              <Link href={book.link}>
+                <h2 className="text-lg text-yellow-300">{book.title}</h2>
+              </Link>
               <div className="flex items-start">
                 <p className="basis-1/4 md:basis-1/3 lg:basis-1/2">저자 : </p>
                 <p className="basis-3/4 md:basis-2/3 lg:basis-1/2">
@@ -55,14 +59,6 @@ export default function BookResults({ bookData }: BookResultsProps) {
               </div>
               <div>
                 <p className="text-slate-300 text-sm">{book.description}</p>
-              </div>
-              <div className="flex justify-center mt-4">
-                <Link
-                  href={book.link}
-                  className="text-yellow-200 bg-yellow-700 px-2 rounded-md hover:opacity-75 duration-300"
-                >
-                  More Info
-                </Link>
               </div>
             </ScrollArea>
           </li>
