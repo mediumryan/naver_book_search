@@ -39,6 +39,9 @@ export default function SearchPage() {
           </Button>
         </div>
         <div className="relative">
+          <p className="text-yellow-300 text-sm text-left md:text-center lg:text-center mx-auto my-2 w-7/12 md:w-full lg:w-full">
+            책 이미지나 제목을 클릭하면 네이버 북스 페이지로 이동할 수 있습니다.
+          </p>
           <BookResults bookData={bookData} />
           <Loading />
         </div>
